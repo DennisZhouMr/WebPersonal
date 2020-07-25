@@ -1,0 +1,51 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="experience-index">
+        <view class="header-content">
+            <at-avatar compid="{{$compid__638}}"></at-avatar>
+            <view class="header-content-right"><text class="text">Hello，昵称</text>
+                <image class="image" src="{{anonymousState__temp2}}"></image>
+            </view>
+        </view>
+        <view class="header-content header-integral">
+            <image class="image" src="{{anonymousState__temp3}}"></image>
+            <view class="header-content-right"><text class="header-integral-number">2786</text><text class="header-integral-dec">当前可用积分</text>
+            </view>
+        </view>
+        <nav-tab compid="{{$compid__639}}"></nav-tab>
+        <view class="main-content">
+            <block wx:if="{{selected === '01'}}">
+                <at-tabs compid="{{$compid__640}}">
+                    <at-tabs-pane compid="{{$compid__641}}">
+                        <appoint-tabs></appoint-tabs>
+                    </at-tabs-pane>
+                    <at-tabs-pane compid="{{$compid__642}}">
+                        <reward-tabs></reward-tabs>
+                    </at-tabs-pane>
+                </at-tabs>
+            </block>
+            <block wx:if="{{selected === '02'}}">
+                <at-tabs compid="{{$compid__643}}">
+                    <at-tabs-pane compid="{{$compid__644}}">
+                        <store-tabs></store-tabs>
+                    </at-tabs-pane>
+                    <at-tabs-pane compid="{{$compid__645}}">
+                        <goods-tabs></goods-tabs>
+                    </at-tabs-pane>
+                </at-tabs>
+            </block>
+            <block wx:if="{{selected === '03'}}">
+                <at-tabs compid="{{$compid__646}}">
+                    <at-tabs-pane compid="{{$compid__647}}">
+                        <integral-tabs></integral-tabs>
+                    </at-tabs-pane>
+                    <at-tabs-pane compid="{{$compid__648}}">
+                        <card-tabs></card-tabs>
+                    </at-tabs-pane>
+                    <at-tabs-pane compid="{{$compid__649}}">
+                        <gift-certificate-tabs></gift-certificate-tabs>
+                    </at-tabs-pane>
+                </at-tabs>
+            </block>
+        </view>
+    </view>
+</block>

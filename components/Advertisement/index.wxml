@@ -1,0 +1,12 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <block wx:if="{{!ADClose}}">
+            <view class="advertisement" bindtap="handleClick">
+                <block wx:if="{{closeBtnVisible}}">
+                    <at-icon compid="{{$compid__659}}"></at-icon>
+                </block>
+                <image src="{{picture}}"></image>
+            </view>
+        </block>
+    </view>
+</block>

@@ -1,0 +1,34 @@
+<block wx:if="{{$taroCompReady}}">
+    <at-float-layout compid="{{$compid__686}}">
+        <view class="discount-pay-float">
+            <view class="title">
+                <at-icon compid="{{$compid__687}}"></at-icon><text>当前你选择了</text><text>线下通过现金或店家其他收款码支付</text>
+            </view>
+            <view class="content">
+                <view class="caption">支付账单信息</view>
+                <view class="desc">消费总额<text class="bold">¥300.00</text>
+                </view>
+                <view class="desc">不参与优惠总额<text>¥30.00</text>
+                </view>
+                <view class="desc">
+                    <view class="bold">优惠金额（¥270.00～9.0折）</view><text>¥27.00</text>
+                </view>
+                <view class="desc">实付金额（¥243.00+¥30.00）<text class="bold color-e0004e">¥273.00</text>
+                </view>
+                <view class="desc">返利赠送积分<text>273</text>
+                </view>
+            </view>
+            <view class="content content-two">
+                <view class="caption">线下支付完成</view>
+                <view class="desc">出示支付凭证给店家确认</view>
+                <view class="desc">店家确认收款后积分自动你的账户</view>
+                <view class="desc">你所处的位置有时会引网络问题，积分到账有可能会延迟</view>
+                <view class="desc">建议买单后查看积分到账情况！</view>
+            </view>
+            <view class="btns at-row at-row__justify--between">
+                <at-button compid="{{$compid__688}}">修改金额</at-button>
+                <at-button compid="{{$compid__689}}">去支付</at-button>
+            </view>
+        </view>
+    </at-float-layout>
+</block>

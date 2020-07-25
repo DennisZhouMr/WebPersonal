@@ -1,0 +1,35 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="rights-container">
+        <at-card compid="{{$compid__652}}">
+            <view class="at-row  at-row--wrap">
+                <view class="at-col at-col-4 at-col--wrap rights-item"><text class="title">STEP01</text>
+                    <view class="icon-content">
+                        <at-icon compid="{{$compid__653}}"></at-icon>
+                    </view>
+                    <image src="{{anonymousState__temp}}"></image>
+                    <view class="content"><text>到店消费</text><text>用权益买单支付</text><text class="sub-text">买单必赠</text>
+                        <view class="line"></view>
+                    </view>
+                </view>
+                <view class="at-col at-col-4 at-col--wrap rights-item"><text class="title">STEP02</text>
+                    <view class="icon-content">
+                        <at-icon compid="{{$compid__654}}"></at-icon>
+                    </view>
+                    <image src="{{anonymousState__temp2}}"></image>
+                    <view class="content"><text>扫商家收款码或</text><text>出示权益卡二维码</text><text class="sub-text">激活商家权益</text>
+                        <view class="line"></view>
+                    </view>
+                </view>
+                <view class="at-col at-col-4 at-col--wrap rights-item"><text class="title">STEP03</text>
+                    <view class="icon-content">
+                        <at-icon compid="{{$compid__655}}"></at-icon>
+                    </view>
+                    <image src="{{anonymousState__temp3}}"></image>
+                    <view class="content"><text>享折后价</text><text class="sub-text">赠送兑换积分</text>
+                        <view class="line"></view>
+                    </view>
+                </view>
+            </view>
+        </at-card>
+    </view>
+</block>

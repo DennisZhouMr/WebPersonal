@@ -1,0 +1,40 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="receive-card-wrapper">
+        <view class="receive-card-container">
+            <view class="card" bindtap="anonymousFunc0">
+                <view class="card-content">
+                    <view class="star">
+                        <view>
+                            <image src="{{anonymousState__temp}}"></image>
+                            <view>
+                                <image src="{{anonymousState__temp2}}"></image>
+                                <view>
+                                    <at-icon compid="{{$compid__428}}"></at-icon>粉丝昵称</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="qrcode">
+                        <at-icon compid="{{$compid__429}}"></at-icon>
+                    </view>
+                </view>
+                <view class="card-caption">
+                    <view>门店名称</view><text>等级名称</text>
+                </view><text class="card-number">313 9732 6643 8768</text>
+                <image src="{{anonymousState__temp3}}" class="badge"></image>
+            </view>
+            <view class="text-box">
+                <view class="title">你已领取了商家权益礼卡</view>
+                <view class="tip">买单享优惠还能返利获赠积分</view>
+                <view class="desc">加入活动攒积分兑好物</view>
+                <view class="desc">更多活动奖励可以查看门店主页</view>
+            </view>
+        </view>
+        <view class="receive-card-container desc-content">
+            <view class="box"><text>激活有礼</text><text>首单消费送双倍积分</text><text>赠送激活礼券</text>
+            </view>
+        </view>
+        <view class="common-button">
+            <at-button compid="{{$compid__430}}">权益卡详情</at-button>
+        </view>
+    </view>
+</block>

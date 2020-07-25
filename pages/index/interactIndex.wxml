@@ -1,0 +1,52 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="interact-wrapper">
+        <view class="header-content">
+            <at-avatar compid="{{$compid__624}}"></at-avatar>
+            <view class="header-content-right"><text class="text">Hello，昵称</text>
+                <image class="image" src="{{anonymousState__temp2}}"></image>
+            </view>
+        </view>
+        <view class="header-content header-integral">
+            <image class="image" src="{{anonymousState__temp3}}"></image>
+            <view class="header-content-right"><text class="header-integral-number">2786</text><text class="header-integral-dec">当前可用积分</text>
+            </view>
+        </view>
+        <nav-tab compid="{{$compid__625}}"></nav-tab>
+        <view class="merchant-content"><text>近期邀约的商家</text>
+            <swiper-prop compid="{{$compid__626}}"></swiper-prop>
+        </view>
+        <advertisement compid="{{$compid__627}}"></advertisement>
+        <view class="interact-container">
+            <block wx:if="{{selected == '01'}}">
+                <view>
+                    <view class="right-icon" bindtap="anonymousFunc0">
+                        <at-icon compid="{{$compid__628}}"></at-icon>
+                    </view>
+                    <at-tabs compid="{{$compid__629}}">
+                        <at-tabs-pane compid="{{$compid__630}}">
+                            <browse-tabs compid="{{$compid__631}}"></browse-tabs>
+                        </at-tabs-pane>
+                        <at-tabs-pane compid="{{$compid__632}}">
+                            <browse-tabs compid="{{$compid__633}}"></browse-tabs>
+                        </at-tabs-pane>
+                    </at-tabs>
+                </view>
+            </block>
+            <block wx:if="{{selected == '02'}}">
+                <view>
+                    <at-tabs compid="{{$compid__634}}">
+                        <at-tabs-pane compid="{{$compid__635}}">
+                            <recent-tabs></recent-tabs>
+                        </at-tabs-pane>
+                        <at-tabs-pane compid="{{$compid__636}}">
+                            <appoint-activity-tabs></appoint-activity-tabs>
+                        </at-tabs-pane>
+                        <at-tabs-pane compid="{{$compid__637}}">
+                            <hot-product-tabs></hot-product-tabs>
+                        </at-tabs-pane>
+                    </at-tabs>
+                </view>
+            </block>
+        </view>
+    </view>
+</block>

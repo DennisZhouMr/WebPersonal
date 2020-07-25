@@ -1,0 +1,19 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="attention-box">
+        <view class="top">
+            <view class="title">当前支付事项：</view>
+            <view class="content">
+                <view class="at-row">
+                    <view class="at-col index">1</view>
+                    <view class="at-col at-col--wrap"><text>{{content}}</text><text>确认实付金额及获赠积分，点击(确定买单)按钮</text>
+                    </view>
+                </view>
+                <view class="at-row">
+                    <view class="at-col index">2</view><text class="at-col at-col--wrap">商家确认收款，积分自动到您账户</text>
+                </view>
+            </view>
+            <button class="btn" bindtap="funPrivatejdzzz">确定买单</button>
+        </view>
+        <view class="bottom"></view>
+    </view>
+</block>

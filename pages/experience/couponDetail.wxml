@@ -1,0 +1,72 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="coupon-detail_container">
+        <view class="coupon-detail_wrap">
+            <view class="qrcode_wrap">
+                <view class="img-box">
+                    <image class="image" src="{{qrcodePng}}" mode="widthFix"></image>
+                </view>
+                <view>买单前，出示即享优惠买单</view>
+                <view>赠送积分</view>
+            </view>
+            <view class="coupon-detail_main">
+                <at-tabs compid="{{$compid__587}}">
+                    <at-tabs-pane compid="{{$compid__588}}">
+                        <view class="info_wrap">
+                            <view class="dd">
+                                <view class="label">优惠名称</view>
+                                <view>读取名称参数</view>
+                            </view>
+                            <view class="dd">
+                                <view class="label">优惠类型</view>
+                                <view>相同商品第二份优惠</view>
+                            </view>
+                            <view class="dd">
+                                <view class="label">有效时间</view>
+                                <view>永久有效</view>
+                            </view>
+                            <view class="dd">
+                                <view class="label">第二份优惠方式</view>
+                                <view>减免(减免金额 0元)</view>
+                            </view>
+                            <view class="dd">
+                                <view class="label">活动商品(0)</view>
+                                <view>0%</view>
+                            </view>
+                            <view class="dd">
+                                <view class="label">券来券</view>
+                                <view>营销活动名称</view>
+                            </view>
+                        </view>
+                    </at-tabs-pane>
+                </at-tabs>
+                <view class="btn_wrap at-row at-row__justify--center">
+                    <view class="left-btn">
+                        <at-button>转赠好友</at-button>
+                    </view>
+                    <view class="right-btn">
+                        <at-button>优惠买单</at-button>
+                    </view>
+                </view>
+                <view class="address_wrap">
+                    <view class="at-row">
+                        <view class="avatar-box"></view>
+                        <view class="at-col text-box">
+                            <view class="name ellipsis">门店名称</view>
+                            <view class="desc ellipsis">店铺描述</view>
+                            <view class="number">
+                                <view class="store-distance">
+                                    <at-icon compid="{{$compid__589}}"></at-icon><text class="text-dom">500m</text>
+                                    <at-icon compid="{{$compid__590}}"></at-icon>
+                                </view>
+                                <view class="store-address">莲湖区西门里南马道巷22号</view>
+                                <view>
+                                    <at-icon compid="{{$compid__591}}"></at-icon><text class="text-dom">小吃/快餐</text>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

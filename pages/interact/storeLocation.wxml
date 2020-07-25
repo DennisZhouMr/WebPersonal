@@ -1,0 +1,9 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="map-box">
+        <map id="map" class="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" bindmarkertap="markertapHandler" show-location="{{true}}" show-compass="{{true}}">
+            <block wx:if="{{markerTapedId}}">
+                <map-cover-view compid="{{$compid__513}}"></map-cover-view>
+            </block>
+        </map>
+    </view>
+</block>

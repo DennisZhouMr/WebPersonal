@@ -1,0 +1,16 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="at-row at-row--wrap at-row__justify--between appoint-activity">
+        <view wx:key="id" class="at-col at-col-6  at-col--wrap appoint-item" wx:for="{{loopArray68}}" wx:for-item="item" wx:for-index="__index0">
+            <view class="top">
+                <image src="{{item.$original.image}}"></image>
+                <at-tag compid="{{item.$compid__709}}">{{item.$original.number}}+次</at-tag>
+            </view>
+            <view class="title">{{item.$original.title}}</view>
+            <view class="bottom">
+                <at-button compid="{{item.$compid__710}}">立即约定</at-button>
+                <view class="text">
+                    <at-icon compid="{{item.$compid__711}}"></at-icon>攒积分</view>
+            </view>
+        </view>
+    </view>
+</block>

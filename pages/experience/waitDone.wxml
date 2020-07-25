@@ -1,0 +1,89 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <view class="wait-done-index">
+            <view class="user-info_wrap at-row at-row__justify--between">
+                <view>
+                    <view class="avatar-box"></view>
+                    <view class="store-name">商家名@用户昵称</view>
+                </view>
+                <view>
+                    <view class="at-row at-row__justify--end">
+                        <view class="avatar-box-2">
+                            <view class="avatar">
+                                <at-avatar compid="{{$compid__532}}"></at-avatar>
+                            </view>
+                            <view class="btn-box">
+                                <at-button compid="{{$compid__533}}">*昵称</at-button>
+                            </view>
+                        </view>
+                        <view class="pt-40">
+                            <view class="icon-box">
+                                <at-icon compid="{{$compid__534}}"></at-icon>
+                            </view>
+                        </view>
+                        <view class="avatar-box-2">
+                            <view class="avatar">
+                                <at-avatar compid="{{$compid__535}}"></at-avatar>
+                            </view>
+                            <view class="btn-box">
+                                <at-button compid="{{$compid__536}}">*昵称</at-button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="wait-done-index_main">
+                <view class="title">邀约好友Ta去领取专属权益卡</view>
+                <view class="at-row at-row__justify--between">
+                    <view class="at-col desc ellipsis">hello!活动期间，邀约好友免费领取权益卡攒积分，积分可兑换成商品，线上包邮、线下自提，激活买单打折赠积分，消费多少送多少，还能领取激活礼，快约ta加入吧！</view>
+                    <view class="desc-right"><text>查看活动内容</text>
+                        <at-icon compid="{{$compid__537}}"></at-icon>
+                    </view>
+                </view>
+            </view>
+            <view class="wait-done-index_main no-arrow no-pb">
+                <view class="select-rights">查看领取的权益卡</view>
+                <view class="title2">商家打赏规则</view>
+                <view class="paragraph2 at-row at-row__justify--between at-row__align--center">
+                    <view>活动邀约激活已完成</view>
+                    <view class="btn">
+                        <at-button compid="{{$compid__538}}">立即领取</at-button>
+                    </view>
+                </view>
+                <view class="paragraph2 at-row at-row__justify--between">
+                    <view>你和ta任意一人完成打卡 1次</view>
+                    <view class="right-txt">
+                        <view>20积分</view>
+                        <view>全场8.5折 券/1张</view>
+                    </view>
+                </view>
+                <view class="active-tit">活动说明：</view>
+                <view class="number-box">
+                    <view class="space">
+                        <at-icon compid="{{$compid__539}}"></at-icon>
+                    </view>
+                    <view class="number">约定编号：SX123456789012236778903456</view>
+                </view>
+            </view>
+            <view class="wait-done-index_main no-arrow">
+                <view class="title2 at-row at-row__justify--between">
+                    <view class="at-col desc ellipsis">到店打卡，得商家打赏礼包</view>
+                    <view>
+                        <at-icon compid="{{$compid__540}}"></at-icon>
+                    </view>
+                </view>
+                <view>应完成时间：2020-03-05 23:59:59</view>
+                <view>第一期 更多记录 ></view>
+            </view>
+        </view>
+        <view class="footer-pisition wait-index_foot at-row">
+            <view class="at-col">
+                <view class="tit">等待完成</view>
+                <view class="desc">2020-02-05 23:59 前</view>
+            </view>
+            <view class="btn">
+                <at-button compid="{{$compid__541}}">到店打卡</at-button>
+            </view>
+        </view>
+    </view>
+</block>

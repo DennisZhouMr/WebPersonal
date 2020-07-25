@@ -1,0 +1,22 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="select-coupons-wrapper">
+        <view class="select-coupons-title">
+            <at-icon compid="{{$compid__620}}"></at-icon>选择优惠券</view>
+        <at-tabs compid="{{$compid__621}}">
+            <at-tabs-pane compid="{{$compid__622}}">
+                <view class="select-couponts-container">
+                    <radio-group bindchange="handleRadioChange">
+                        <view class="select-couponts-item" wx:key="id" wx:for="{{mockData}}" wx:for-item="item" wx:for-index="_anonIdx2">
+                            <view class="box sale"><text>{{item.sale}}</text>折</view>
+                            <view class="box content">
+                                <view class="text"><text>{{item.caption}}</text><text>有效时间：{{item.period}}</text><text>适用范围：{{item.scope}}</text>
+                                </view>
+                                <radio class="radio" value="{{item.sale}}" checked="{{item.checked}}"></radio>
+                            </view>
+                        </view>
+                    </radio-group>
+                </view>
+            </at-tabs-pane>
+        </at-tabs>
+    </view>
+</block>

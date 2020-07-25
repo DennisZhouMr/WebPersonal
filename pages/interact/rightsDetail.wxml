@@ -1,0 +1,87 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <view class="rightsDetail-container">
+            <view class="qrcode-container">
+                <image src="{{anonymousState__temp}}"></image><text>313 9732 6643 8768</text><text class="desc">出示买单即享优惠赠送积分</text>
+                <view>
+                    <block>
+                        <block wx:if="{{!isActive}}">
+                            <at-button compid="{{$compid__504}}">激活买单立享权益</at-button>
+                        </block>
+                        <block wx:else><text>权益有效时间：2020/02/03-2020/02/06</text>
+                        </block>
+                    </block>
+                </view>
+            </view>
+            <view class="rights-tabs">
+                <at-tabs compid="{{$compid__505}}">
+                    <at-tabs-pane compid="{{$compid__506}}">
+                        <view class="myRights">
+                            <view class="at-row content">
+                                <view class="at-col at-col-3">
+                                    <image src="{{anonymousState__temp2}}"></image>
+                                </view>
+                                <view class="at-col at-col-6">权益获取条件</view>
+                                <view class="at-col at-col-3">当前权益</view>
+                            </view>
+                            <view class="grade">当前等级：等级名称</view>
+                            <view class="at-row content grade-content grade-content-color">
+                                <view class="at-col at-col-3">
+                                    <image src="{{anonymousState__temp3}}"></image>
+                                </view>
+                                <view class="at-col at-col-6">注册激活</view>
+                                <view class="at-col at-col-3">整单折扣<text>9.0折</text>
+                                </view>
+                            </view>
+                            <view class="grade grade-next">下一阶等级：等级名称</view>
+                            <view class="at-row content grade-content">
+                                <view class="at-col at-col-3">
+                                    <image src="{{anonymousState__temp4}}"></image>
+                                </view>
+                                <view class="at-col at-col-6">累积邀请2位好友消费<text>累积消费金额达到500元</text><text>二者达其一</text>
+                                </view>
+                                <view class="at-col at-col-3">整单折扣<text>9.0折</text>
+                                </view>
+                            </view>
+                            <view class="grade-next caption">可以转赠优惠券或分享好友领取权益卡，好友到店消费，达到条件，系统会自动升级优惠权益。可以参与商家的活动去获取优惠券及礼品。消费或活动赠送的积分，系统会自动捆绑到您的个人账户。</view>
+                        </view>
+                        <view class="inviteFriends">
+                            <at-badge compid="{{$compid__507}}">
+                                <at-icon compid="{{$compid__508}}"></at-icon>
+                            </at-badge>
+                            <view class="invite-list">
+                                <view class="noContent"><text class="title">成功邀约0位好友消费</text><text>暂无好友消费</text>
+                                </view>
+                            </view>
+                        </view>
+                    </at-tabs-pane>
+                    <at-tabs-pane compid="{{$compid__509}}">
+                        <view class="consumer-welfare">
+                            <view class="box">
+                                <view class="top"></view>
+                                <view class="circle">
+                                    <at-icon compid="{{$compid__510}}"></at-icon>
+                                </view>
+                                <view class="content">买单必赠，消费1元赠送1积分</view>
+                            </view>
+                            <view class="Tips">
+                                <view>温馨提示</view><text>1、消费即赠，赠送积分数为实际买单金额，不限次数</text><text>2、积分可用来抵扣也可免费兑换好物满足你不同需求</text><text>3、会员权益解释权归商家所有</text>
+                            </view>
+                        </view>
+                    </at-tabs-pane>
+                </at-tabs>
+            </view>
+            <rights-prop></rights-prop>
+        </view>
+        <view class="footer-pisition">到店优惠买单赠送积分</view>
+        <float-layout compid="{{$compid__511}}">
+            <image src="{{anonymousState__temp5}}"></image>
+            <view slot="content">
+                <view class="at-col" bindtap="handleJump">
+                    <at-icon compid="{{$compid__512}}"></at-icon>
+                    <view>生成海报</view>
+                </view>
+            </view>
+        </float-layout>
+    </view>
+</block>

@@ -1,0 +1,71 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <view class="coupon-container">
+            <view class="store-box"><text class="title">适用店铺</text>
+                <view class="store-caption">
+                    <at-avatar compid="{{$compid__439}}"></at-avatar>
+                    <view><text>门店名称</text><text>店铺描述</text>
+                        <view class="caption-info">
+                            <view>
+                                <at-icon compid="{{$compid__440}}"></at-icon>500m</view>
+                            <view>莲湖区西门里南马道巷22号莲湖区西门里南马道巷22号</view>
+                            <view>
+                                <at-icon compid="{{$compid__441}}"></at-icon>小吃/快餐</view>
+                            <view>
+                                <at-icon compid="{{$compid__442}}"></at-icon>人均客单价：58元/人</view>
+                        </view>
+                    </view>
+                    <view class="icon-group">
+                        <view>
+                            <at-icon compid="{{$compid__443}}"></at-icon>
+                        </view>
+                        <view class="text">联系商家</view>
+                        <view>
+                            <at-icon compid="{{$compid__444}}"></at-icon>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="voucher-container">
+                <view class="voucher-list" wx:for="{{voucherList}}" wx:for-item="item" wx:for-index="_anonIdx2">
+                    <view class="voucher-content">
+                        <radio class="radio" value="{{item.ticket}}" checked="{{item.checked}}" color="#FDD000"></radio>
+                        <view class="titile">{{item.title}}</view>
+                        <view class="tips"><text>{{item.desc}}</text>
+                            <view class="{{item.type == 1 ? 'ticket-voucher' : 'ticket-sale'}}">{{item.ticket}}</view>
+                        </view>
+                        <view class="button">
+                            <view>{{item.tip}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <at-card compid="{{$compid__445}}"><text>有效期：</text><text>使用时间：</text><text>适用范围：</text><text>无需预约，消费高峰期可能需要等位</text><text>商家提供免费WIFI</text><text>停车位收费标准：有停车位</text><text>发票问题请询问商家</text><text>团购用户不可同时享受商家其他优惠</text><text>酒水饮料等问题，请致电商家咨询，以商家反馈为准</text><text>不兑现、不找零</text>
+            </at-card>
+            <at-card compid="{{$compid__446}}">
+                <view class="box">
+                    <image src="{{anonymousState__temp2}}"></image>
+                    <view class="content">
+                        <view class="top"><text>365礼享会员卡／买单必返</text>
+                            <at-button compid="{{$compid__447}}">立即查看</at-button>
+                        </view>
+                        <view class="desc">¥<text>69</text>/一年</view>
+                    </view>
+                </view>
+            </at-card>
+            <view style="{{anonymousState__temp3}}"></view>
+        </view>
+        <view class="footer-pisition">
+            <view class="at-row">
+                <view class="at-col  at-col--auto left-content">
+                    <at-icon compid="{{$compid__448}}"></at-icon>
+                    <view class="integral"><text>10/</text>兑换积分</view>
+                    <view class="desc">可省10元</view>
+                </view>
+                <view class="btn">
+                    <at-button compid="{{$compid__449}}">立即兑换</at-button>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

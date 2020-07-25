@@ -1,0 +1,32 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="clock-record-wrapper">
+        <view class="discounts-pay-list clock-record-list">
+            <view class="list-item">
+                <view class="list-item-container">
+                    <view class="list-item-content">
+                        <view class="list-item-content_title">
+                            <view class="list-item-content_info">等待完成
+                                <at-tag>本次</at-tag>
+                            </view>
+                            <view class="list-item-extra_info">1/1次</view>
+                        </view>
+                        <view class="list-item-content_desc">应完成时间：2020-03-05 23:59:59</view>
+                    </view>
+                </view>
+            </view>
+            <view class="list-item">
+                <view class="list-item-container">
+                    <view class="list-item-content">
+                        <view class="list-item-content_title">
+                            <view class="list-item-content_info">等待完成
+                                <at-tag>本次</at-tag>
+                            </view>
+                            <view class="list-item-extra_info">1/1次</view>
+                        </view>
+                        <view class="list-item-content_desc">应完成时间：2020-03-05 23:59:59</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,30 @@
+<block wx:if="{{$taroCompReady}}">
+    <at-tabs compid="{{$compid__773}}">
+        <at-tabs-pane compid="{{$compid__774}}">
+            <view class="caption selected-wrap at-row">
+                <view class="item" bindtap="selectedClick"><text class="space">券类型(12张)</text>
+                    <at-icon compid="{{$compid__775}}"></at-icon>
+                </view>
+                <view class="item" bindtap="selectedClick"><text class="space">券来源</text>
+                    <at-icon compid="{{$compid__776}}"></at-icon>
+                </view>
+            </view>
+            <view class="list-wrap">
+                <gift-certificate-list-item wx:key="id" wx:for="{{loopArray82}}" wx:for-item="item" wx:for-index="_anonIdx2" compid="{{item.$compid__771}}"></gift-certificate-list-item>
+            </view>
+        </at-tabs-pane>
+        <at-tabs-pane compid="{{$compid__777}}">
+            <view class="caption selected-wrap at-row">
+                <view class="item" bindtap="selectedClick"><text class="space">券类型(6张)</text>
+                    <at-icon compid="{{$compid__778}}"></at-icon>
+                </view>
+                <view class="item" bindtap="selectedClick"><text class="space">券来源</text>
+                    <at-icon compid="{{$compid__779}}"></at-icon>
+                </view>
+            </view>
+            <view class="list-wrap">
+                <gift-certificate-list-used-item wx:key="id" wx:for="{{loopArray83}}" wx:for-item="item" wx:for-index="_anonIdx4" compid="{{item.$compid__772}}"></gift-certificate-list-used-item>
+            </view>
+        </at-tabs-pane>
+    </at-tabs>
+</block>

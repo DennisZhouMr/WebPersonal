@@ -1,0 +1,28 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="{{'step ' + (direction == 'row' ? 'step-row' : '')}}">
+        <view wx:key="title" class="step-item" wx:for="{{loopArray63}}" wx:for-item="item" wx:for-index="index">
+            <view class="{{'circular-wrap ' + (direction == 'row' ? 'circular-wrap-row' : '')}}">
+                <block wx:if="{{index > 0}}">
+                    <view class="step-left-line"></view>
+                </block>
+                <view class="step-circular">
+                    <block wx:if="{{item.$original.icon}}">
+                        <at-icon compid="{{item.$compid__656}}"></at-icon>
+                    </block>
+                    <block wx:if="{{item.$original.title && direction == 'row'}}">
+                        <view class="step-title">{{item.$original.title}}</view>
+                    </block>
+                </view>
+                <block wx:if="{{index < items.length - 1}}">
+                    <view class="step-right-line"></view>
+                </block>
+            </view>
+            <block wx:if="{{direction !== 'row' && item.$original.title}}">
+                <view class="step-title">{{item.$original.title}}</view>
+            </block>
+            <block wx:if="{{item.$original.desc}}">
+                <view class="step-desc">{{item.$original.desc}}</view>
+            </block>
+        </view>
+    </view>
+</block>

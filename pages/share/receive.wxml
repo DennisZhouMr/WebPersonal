@@ -1,0 +1,20 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="share-container">
+        <view class="share-wrap">
+            <view class="avatar-box_60-60 back-yellow at-row at-row__align--center at-row__justify--center">
+                <at-icon compid="{{$compid__604}}"></at-icon>
+            </view>
+            <view>
+                <image class="img-placeholder" src="{{couponLeftPng7}}" mode="widthFix"></image>
+                <view class="share-coupon_wrap">
+                    <view class="share-coupon_box">
+                        <coupon-item compid="{{$compid__605}}"></coupon-item>
+                        <view class="text">好友赠你的礼券</view>
+                    </view>
+                </view>
+                <image class="img-placeholder" src="{{couponLeftPng9}}" mode="widthFix"></image>
+                <image class="img-placeholder" src="{{couponLeftPng8}}" mode="widthFix"></image>
+            </view>
+        </view>
+    </view>
+</block>

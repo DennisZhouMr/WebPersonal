@@ -1,0 +1,54 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="pay-success-wrapper">
+        <view class="discounts-pay-title">完成</view>
+        <view class="pay-success-top">
+            <at-icon compid="{{$compid__616}}"></at-icon><text class="padding">支付成功</text>
+            <view class="place">¥<text>285.00</text>
+            </view><text>(消费)返利赠送积分 +285</text>
+        </view>
+        <view class="at-row payee-container">
+            <view class="at-col at-col-6 left">收款方<text>门店名称</text>
+            </view>
+            <view class="at-col at-col-6 right">收款金额<text>¥ 285.00</text>
+            </view>
+        </view>
+        <view class="payment-methods">付款方式<text>其他支付</text>
+        </view>
+        <view class="discount-coupon-container"><text class="caption">买单付款领福利</text><text class="title">{{type == 1 ? "选取礼券" : "福利选取成功"}}</text>
+            <view class="at-row coupon-list">
+                <block wx:if="{{type == 1}}">
+                    <view class="at-col at-col-4 at-col--wrap coupon-list-item" wx:key="type" wx:for="{{loopArray60}}" wx:for-item="item" wx:for-index="_anonIdx2">
+                        <view><text class="type ellipsis">{{item.$original.type}}</text>
+                            <view class="content"><text class="caption ellipsis">{{item.$original.caption}}</text><text class="ellipsis">{{item.$original.desc}}</text>
+                            </view>
+                            <at-button compid="{{item.$compid__615}}">选我</at-button>
+                        </view>
+                    </view>
+                </block>
+                <block wx:if="{{type == 2}}">
+                    <view class="coupon-list-welfare">
+                        <view class="content">
+                            <view class="sale"><text class="font-80">6</text><text>折</text>
+                            </view>
+                            <view class="at-row ticket">
+                                <view class="at-col">
+                                    <at-icon compid="{{$compid__617}}"></at-icon>
+                                </view>
+                                <view class="at-col at-col--auto right"><text class="ticket-title">券名称</text><text>永久有效</text><text class="ticket-desc">全店通用/适用范围</text>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="check">查看商家 ></view>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view class="pay-success-bottom">
+            <view class="advertsement-circle">
+                <image src="{{anonymousState__temp}}"></image>
+            </view>
+            <at-button compid="{{$compid__618}}">在线投诉</at-button>
+        </view>
+        <advertisement compid="{{$compid__619}}"></advertisement>
+    </view>
+</block>

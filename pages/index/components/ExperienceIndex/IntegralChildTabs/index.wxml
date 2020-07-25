@@ -1,0 +1,39 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="integral-child-tabs">
+        <view class="more">更多好物</view>
+        <at-tabs compid="{{$compid__762}}">
+            <at-tabs-pane compid="{{$compid__763}}">
+                <view class="at-row at-row--wrap integral-child-tabs_exchange">
+                    <view wx:key="id" class="at-col at-col-6 integral-child-tabs_exchange--item" wx:for="{{loopArray79}}" wx:for-item="item" wx:for-index="_anonIdx2">
+                        <view class="img-box"></view>
+                        <view class="text-box">
+                            <view class="tit ellipsis">{{item.$original.brandName}}</view>
+                            <view class="desc">{{item.$original.desc}}</view>
+                            <view class="at-row at-row__align--end integral-box">
+                                <view class="at-col">{{item.$original.number}}<text class="font-20 no-bold">积分</text>
+                                </view>
+                                <at-icon compid="{{item.$compid__760}}"></at-icon>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </at-tabs-pane>
+            <at-tabs-pane compid="{{$compid__764}}">
+                <view class="at-row at-row--wrap integral-child-tabs_exchange">
+                    <view wx:key="id" class="at-col at-col-6 integral-child-tabs_exchange--item" wx:for="{{loopArray80}}" wx:for-item="item" wx:for-index="_anonIdx4">
+                        <view class="img-box"></view>
+                        <view class="text-box">
+                            <view class="tit ellipsis">{{item.$original.brandName}}</view>
+                            <view class="desc">{{item.$original.desc}}</view>
+                            <view class="at-row at-row__align--end integral-box">
+                                <view class="at-col">{{item.$original.number}}<text class="font-20 no-bold">积分</text>
+                                </view>
+                                <at-icon compid="{{item.$compid__761}}"></at-icon>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </at-tabs-pane>
+        </at-tabs>
+    </view>
+</block>

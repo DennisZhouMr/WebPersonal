@@ -1,0 +1,57 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="settlement-center-wrapper">
+        <view class="container">
+            <view class="top">
+                <view class="title">5积分</view>
+                <view class="desc">目前您的有效兑换积分为</view>
+                <view class="text">5000</view>
+            </view>
+            <view class="bottom">
+                <view class="btn btn-buy">
+                    <block wx:if="{{type == 2}}">
+                        <at-button compid="{{$compid__399}}">购买兑礼卡</at-button>
+                    </block>
+                </view>
+                <view class="discounts-pay-list settlement-center-list">
+                    <radio-group bindchange="handleRadioChange">
+                        <view class="list-item">
+                            <view class="list-item-container">
+                                <view class="list-item-thumb">
+                                    <at-icon compid="{{$compid__400}}"></at-icon>
+                                </view>
+                                <view class="list-item-content">
+                                    <view class="list-item-content_title bold">抵扣积分</view>
+                                </view>
+                                <view class="list-item-extra">
+                                    <view class="list-item-extra_info padding-left">
+                                        <radio class="radio" value="integral" checked="{{false}}"></radio>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </radio-group>
+                </view>
+                <view class="tips-text">点击“确定抵扣”按钮并抵扣相应积分兑换商品时，即代表您已阅读、理解并接受<text>兑集积分兑换规则（电子版的特别规定）</text>
+                </view>
+                <view class="btn">
+                    <block wx:if="{{type == 1}}">
+                        <at-button compid="{{$compid__401}}">
+                            <block>
+                                <block wx:if="{{!isLoading}}">{{"确定抵扣"}}</block>
+                                <block wx:else>
+                                    <at-icon compid="{{$compid__402}}"></at-icon>
+                                </block>
+                            </block>
+                        </at-button>
+                    </block>
+                    <block wx:if="{{type == 2}}">
+                        <at-button compid="{{$compid__403}}">确定抵扣</at-button>
+                    </block>
+                </view>
+            </view>
+        </view>
+        <view class="close">
+            <at-icon compid="{{$compid__404}}"></at-icon>
+        </view>
+    </view>
+</block>

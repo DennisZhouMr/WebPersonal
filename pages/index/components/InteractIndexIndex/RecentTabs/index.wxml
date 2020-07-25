@@ -1,0 +1,12 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="recent-activity">
+        <view wx:key="id" class="activity-item" bindtap="anonymousFunc0" wx:for="{{loopArray67}}" wx:for-item="item" wx:for-index="__index0" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+            <view class="content">
+                <view class="time">
+                    <at-icon compid="{{item.$compid__708}}"></at-icon>{{item.$original.beginTime}}-{{item.$original.endTime}}</view>
+                <view class="name">{{item.$original.name}}</view>
+            </view>
+            <image src="{{item.$original.image}}" class="pictrue"></image>
+        </view>
+    </view>
+</block>

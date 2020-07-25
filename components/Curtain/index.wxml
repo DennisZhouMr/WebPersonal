@@ -1,0 +1,8 @@
+<block wx:if="{{$taroCompReady}}">
+    <at-curtain compid="{{$compid__657}}">
+        <view class="curtain-content">
+            <view class="title">{{title}}</view>
+            <slot></slot>
+        </view>
+    </at-curtain>
+</block>

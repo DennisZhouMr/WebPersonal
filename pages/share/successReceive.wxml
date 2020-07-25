@@ -1,0 +1,19 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="success-receive-wrapper">
+        <view class="success-receive-container">
+            <coupon-item compid="{{$compid__606}}"></coupon-item>
+            <view class="text-box">
+                <view class="title">你已领取了好友的礼券</view>
+                <view class="tip">买单享优惠还能返利获赠积分</view>
+                <view class="desc">更多活动奖励可以查看门店主页</view>
+            </view>
+        </view>
+        <view class="success-receive-container desc-content">
+            <view class="box"><text>商家送您一份专属权益待激活</text>
+            </view>
+        </view>
+        <view class="common-button">
+            <at-button compid="{{$compid__607}}">我的卡包</at-button>
+        </view>
+    </view>
+</block>

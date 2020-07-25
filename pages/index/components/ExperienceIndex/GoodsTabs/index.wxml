@@ -1,0 +1,22 @@
+<block wx:if="{{$taroCompReady}}">
+    <at-tabs compid="{{$compid__745}}">
+        <at-tabs-pane compid="{{$compid__746}}">
+            <view class="goods-tabs_wrap">
+                <view class="goods-tabs_ad"></view>
+                <goods-tabs-item wx:key="id" wx:for="{{loopArray75}}" wx:for-item="item" wx:for-index="_anonIdx2" compid="{{item.$compid__742}}"></goods-tabs-item>
+            </view>
+        </at-tabs-pane>
+        <at-tabs-pane compid="{{$compid__747}}">
+            <view class="goods-tabs_wrap">
+                <view class="goods-tabs_ad"></view>
+                <goods-tabs-item wx:key="id" wx:for="{{loopArray76}}" wx:for-item="item" wx:for-index="_anonIdx4" compid="{{item.$compid__743}}"></goods-tabs-item>
+            </view>
+        </at-tabs-pane>
+        <at-tabs-pane compid="{{$compid__748}}">
+            <view class="goods-tabs_wrap">
+                <view class="goods-tabs_ad"></view>
+                <goods-tabs-item wx:key="id" wx:for="{{loopArray77}}" wx:for-item="item" wx:for-index="_anonIdx6" compid="{{item.$compid__744}}"></goods-tabs-item>
+            </view>
+        </at-tabs-pane>
+    </at-tabs>
+</block>

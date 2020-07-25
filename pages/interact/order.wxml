@@ -1,0 +1,66 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <view class="sign-up-order_index">
+            <view class="sign-up_main-box at-row">
+                <view class="img-box">
+                    <image class="image" src="{{bannerPng}}" mode="aspectFill"></image>
+                </view>
+                <view>
+                    <view class="active-tit">活动主标题</view>
+                    <view class="active-desc">活动描述语</view>
+                </view>
+            </view>
+            <view class="sign-up_main-box at-row at-row__justify--between label-item label-icon-item">
+                <view class="label">支付方式</view>
+                <view>在线支付</view>
+            </view>
+            <view class="sign-up_main-box">
+                <view class="at-row at-row__justify--between label-item label-icon-item">
+                    <view class="label">礼券</view>
+                    <view><text>无可用</text>
+                    </view>
+                    <view class="icon-box">
+                        <at-icon compid="{{$compid__395}}"></at-icon>
+                    </view>
+                </view>
+                <view class="at-row at-row__justify--between label-item label-icon-item">
+                    <view class="label">有效兑换积分</view>
+                    <view><text>5000</text>
+                    </view>
+                </view>
+                <view class="at-row at-row__justify--between label-item label-icon-item">
+                    <view class="label">兑礼卡</view>
+                    <view><text>无可用</text>
+                    </view>
+                    <view class="icon-box">
+                        <at-icon compid="{{$compid__396}}"></at-icon>
+                    </view>
+                </view>
+            </view>
+            <view class="sign-up_main-box at-row at-row__justify--between label-item">
+                <view class="label">手机号</view>
+                <view>
+                    <at-input compid="{{$compid__397}}"></at-input>
+                </view>
+            </view>
+            <view class="sign-up_main-box at-row at-row__justify--between label-item">
+                <view class="label">抵扣积分</view>
+                <view>5积分</view>
+            </view>
+        </view>
+        <view class="footer-pisition">
+            <view class="box"><text class="space2">需抵扣总积分 5</text>
+                <view class="right">
+                    <view class="content-btn" bindtap="anonymousFunc0">
+                        <image src="{{anonymousState__temp}}"></image>
+                        <view class="desc">
+                            <view class="space"><text class="font-28">递交订单</text>
+                            </view>
+                            <at-icon compid="{{$compid__398}}"></at-icon>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

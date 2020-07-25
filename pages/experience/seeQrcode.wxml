@@ -1,0 +1,26 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="see-qrcode-index">
+        <view class="caption">
+            <view class="tit">活动名称</view>
+            <view class="desc">有效期至： 2021-01-14 23:59</view>
+        </view>
+        <view class="number-box at-row at-row__justify--between">
+            <view>
+                <view>券码：</view>
+                <view class="number">2588 6818 3728</view>
+            </view>
+            <view class="right-txt">
+                <view>
+                    <at-icon compid="{{$compid__566}}"></at-icon>
+                </view>
+                <view>赠送好友</view>
+            </view>
+        </view>
+        <view class="qr-code-box">
+            <view class="tit">到门店出示即可</view>
+            <view>
+                <image class="qr-code" src="{{qrcodePng}}" mode="widthFix"></image>
+            </view>
+        </view>
+    </view>
+</block>

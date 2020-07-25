@@ -1,0 +1,42 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="{{'gift-certificate-item_container at-row ' + item.theme}}" bindtap="anonymousFunc0">
+        <view class="left-box">
+            <view class="store-name at-row at-row__justify--center at-row__align--center">
+                <view class="round"></view>
+                <view class="text ellipsis">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="right-box at-col">
+            <view class="at-row at-row__justify--between at-row__align--end">
+                <view class="at-row at-row__justify--center at-row__align--center">
+                    <view class="offer-name at-row at-row__justify--center at-row__align--center">
+                        <view class="round-icon at-row at-row__justify--center at-row__align--center">
+                            <at-icon compid="{{$compid__729}}"></at-icon>
+                        </view>
+                        <view class="text ellipsis">{{item.offerName}}</view>
+                    </view>
+                    <view class="line"></view>
+                    <view class="discount at-col">{{item.couponDiscount}}<text class="text">折</text>
+                    </view>
+                </view>
+                <view class="right-text-box at-row at-row__justify--between at-row__align--end flex-column">
+                    <view>
+                        <at-icon compid="{{$compid__730}}"></at-icon>
+                    </view>
+                    <view class="text-box">
+                        <view class="coupon-name">{{item.couponName}}</view>
+                        <view class="time">{{item.time}}</view>
+                        <view class="range">{{item.range}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="icon-box">
+                <view class="at-row">
+                    <view class="share-icon at-row at-row__justify--center at-row__align--center">
+                        <at-icon compid="{{$compid__731}}"></at-icon>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

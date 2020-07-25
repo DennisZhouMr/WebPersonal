@@ -1,0 +1,13 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="home">
+        <view class="main">
+            <block wx:if="{{current === 0}}">
+                <interact-index></interact-index>
+            </block>
+            <block wx:if="{{current === 2}}">
+                <experience-index></experience-index>
+            </block>
+        </view>
+        <tab-bar-bottom compid="{{$compid__623}}"></tab-bar-bottom>
+    </view>
+</block>

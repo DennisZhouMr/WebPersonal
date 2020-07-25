@@ -1,0 +1,37 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <view class="product-container">
+            <at-tabs compid="{{$compid__514}}">
+                <at-tabs-pane compid="{{$compid__515}}">
+                    <group-one-tabs></group-one-tabs>
+                </at-tabs-pane>
+                <at-tabs-pane compid="{{$compid__516}}"></at-tabs-pane>
+            </at-tabs>
+        </view>
+        <view class="footer-pisition">
+            <view class="box">
+                <at-button compid="{{$compid__517}}">兑集365礼享会员</at-button>
+                <view class="right">
+                    <view class="content-btn">
+                        <image src="{{anonymousState__temp}}"></image>
+                        <view class="desc">
+                            <view class="money font-20">¥<text class="font-24">129</text>
+                            </view>
+                            <view>单独买</view>
+                        </view>
+                    </view>
+                    <view class="content-btn content-btn-text">
+                        <image src="{{anonymousState__temp2}}"></image>
+                        <view class="desc ">
+                            <view class="space">
+                                <view class="money">¥<text class="font-24">129</text>
+                                </view><text class="font-28">立即参与</text>
+                            </view>
+                            <at-icon compid="{{$compid__518}}"></at-icon>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

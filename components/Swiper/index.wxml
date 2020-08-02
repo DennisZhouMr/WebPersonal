@@ -1,7 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <swiper class="swiper-container" previous-margin="50px" next-margin="50px" circular="{{true}}" indicator-dots="{{indicatorDots}}" interval="2000" autoplay="{{true}}" bindchange="handleSwiperChange">
-        <swiper-item wx:key="index" class="swripe-item" wx:for="{{imgList}}" wx:for-item="item" wx:for-index="index">
-            <image bindload="getHeight" class="{{'swiper-img ' + (nowIdx === index ? 'swiper-active' : '')}}" src="{{item.url}}"></image>
-        </swiper-item>
-    </swiper>
-</block>
